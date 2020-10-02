@@ -1,0 +1,14 @@
+uuid: 762fd6cf-66ff-4846-9ba7-605b0952b930
+name: moviespot
+mail: pandaemoniumplaza@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
