@@ -1,0 +1,8 @@
+uuid: 05575c68-bf54-4b5b-ab6b-8e3e9fbf6a13
+langcode: en
+status: true
+dependencies: {  }
+name: Countries
+vid: contries
+description: 'Use country tag to group movies with similar countries into categories'
+weight: -8

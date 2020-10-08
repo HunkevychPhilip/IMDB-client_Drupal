@@ -1,0 +1,18 @@
+uuid: de2a29ff-15bb-4e45-b728-b2a165a01589
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.test_fim_content_type_
+id: node.test_fim_content_type_.title
+field_name: title
+entity_type: node
+bundle: test_fim_content_type_
+label: 'Taxonomy test (film content type)'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
