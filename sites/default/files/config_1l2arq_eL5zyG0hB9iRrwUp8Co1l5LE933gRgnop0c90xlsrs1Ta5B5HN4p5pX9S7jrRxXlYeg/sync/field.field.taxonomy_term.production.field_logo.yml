@@ -1,0 +1,38 @@
+uuid: ed3a11d4-935c-431b-a601-66f5a48bdabe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_logo
+    - taxonomy.vocabulary.production
+  module:
+    - image
+id: taxonomy_term.production.field_logo
+field_name: field_logo
+entity_type: taxonomy_term
+bundle: production
+label: Logo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 70x45
+  min_resolution: 70x30
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: 800
+    height: 421
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

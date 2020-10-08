@@ -5,5 +5,41 @@ definitions:
     parent: ''
     weight: 0
     expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__movie_taxonomy__2':
+    expanded: true
+    parent: 'admin:'
+    weight: 0
+    menu_name: footer
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__movie_taxonomy__1':
+    expanded: true
+    parent: 'admin:'
+    weight: 1
+    menu_name: footer
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__movie_taxonomy__3':
+    expanded: true
+    parent: 'admin:'
+    weight: 2
+    menu_name: footer
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__taxonomy_menu__2':
+    expanded: false
+    parent: 'admin:'
+    weight: 0
+    menu_name: tools
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__taxonomy_menu__1':
+    expanded: false
+    parent: 'admin:'
+    weight: 1
+    menu_name: tools
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__taxonomy_menu__3':
+    expanded: false
+    parent: 'admin:'
+    weight: 2
+    menu_name: tools
+    enabled: true
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
