@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.field.node.test_fim_content_type_.body
     - field.field.node.test_fim_content_type_.field_country
+    - field.field.node.test_fim_content_type_.field_film_comments
     - field.field.node.test_fim_content_type_.field_genre
     - field.field.node.test_fim_content_type_.field_production_studio
     - node.type.test_fim_content_type_
   module:
+    - comment
     - path
     - text
 id: node.test_fim_content_type_.default
@@ -41,6 +43,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_film_comments:
+    weight: 125
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
     region: content
   field_genre:
     weight: 122

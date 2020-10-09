@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Taxonomy test (film content type)'
+name: 'Taxonomy and comments test'
 type: test_fim_content_type_
-description: ''
+description: 'You can test taxonomy or comments working'
 help: ''
 new_revision: true
 preview_mode: 1
