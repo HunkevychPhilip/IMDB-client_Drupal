@@ -1,0 +1,6 @@
+name: My_MODULE
+description: My first custom module.
+package: Custom
+
+type: module
+core_version_requirement: ^8.8 || ^9
