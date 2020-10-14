@@ -1279,7 +1279,6 @@
             "time": "2020-03-27T11:06:43+00:00"
         },
         {
-<<<<<<< HEAD
             "name": "drupal/captcha",
             "version": "1.1.0",
             "source": {
@@ -1301,7 +1300,6 @@
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1591160977",
-=======
             "name": "drupal/bootstrap_barrio",
             "version": "5.1.2",
             "source": {
@@ -1324,17 +1322,13 @@
                 "drupal": {
                     "version": "5.1.2",
                     "datestamp": "1597889062",
->>>>>>> 83b9114... Add feature/sub-theme
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-<<<<<<< HEAD
                 },
                 "branch-alias": {
                     "dev-8.x-1.x": "1.x-dev"
-=======
->>>>>>> 83b9114... Add feature/sub-theme
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1343,7 +1337,6 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
                     "name": "RobLoach",
                     "homepage": "https://www.drupal.org/user/61114"
                 },
@@ -1377,7 +1370,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/captcha",
                 "issues": "https://www.drupal.org/project/issues/captcha"
-=======
                     "name": "Alberto Siles",
                     "homepage": "https://www.drupal.org/user/2824325",
                     "email": "alberto@siles.pe"
@@ -1391,7 +1383,6 @@
             "homepage": "https://www.drupal.org/project/bootstrap_barrio",
             "support": {
                 "source": "https://git.drupalcode.org/project/bootstrap_barrio"
->>>>>>> 83b9114... Add feature/sub-theme
             }
         },
         {
