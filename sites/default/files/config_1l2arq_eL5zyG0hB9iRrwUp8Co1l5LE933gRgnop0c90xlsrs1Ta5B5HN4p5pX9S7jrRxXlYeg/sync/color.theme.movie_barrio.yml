@@ -7,12 +7,12 @@ palette:
   footer: '#2c2c28'
   button: '#8c0d2f'
   buttonhover: '#d7210e'
-  titleslogan: '#ffffff'
+  titleslogan: '#fefefd'
   text: '#301313'
   link: '#d7210e'
-logo: 'public://color/movie_barrio-41199c5b/logo.svg'
+logo: 'public://color/movie_barrio-3b43f614/logo.svg'
 stylesheets:
-  - 'public://color/movie_barrio-41199c5b/colors.css'
+  - 'public://color/movie_barrio-3b43f614/colors.css'
 files:
-  - 'public://color/movie_barrio-41199c5b/logo.svg'
-  - 'public://color/movie_barrio-41199c5b/colors.css'
+  - 'public://color/movie_barrio-3b43f614/logo.svg'
+  - 'public://color/movie_barrio-3b43f614/colors.css'
