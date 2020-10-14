@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
-name: Genres
+name: Tags
 vid: tags
-description: 'Use genre tag to group movies with similar genres into categories'
-weight: -10
+description: 'Use tags to group articles on similar topics into categories.'
+weight: 0

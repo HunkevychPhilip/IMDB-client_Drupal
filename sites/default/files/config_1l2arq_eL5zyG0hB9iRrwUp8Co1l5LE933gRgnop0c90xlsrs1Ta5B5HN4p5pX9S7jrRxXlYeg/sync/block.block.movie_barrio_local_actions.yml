@@ -1,0 +1,20 @@
+uuid: 6fa5ba4d-2e50-4af0-8f32-997b9432f8e4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - movie_barrio
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: movie_barrio_local_actions
+theme: movie_barrio
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
