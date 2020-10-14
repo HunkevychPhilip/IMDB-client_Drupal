@@ -1,8 +1,0 @@
-uuid: f64945df-9246-4e98-985f-5ba3d4d15ed2
-langcode: en
-status: true
-dependencies: {  }
-id: film_comments
-label: 'Film Comments'
-target_entity_type_id: node
-description: 'Allows commenting on film content and provides 10 levels ratings scale'
