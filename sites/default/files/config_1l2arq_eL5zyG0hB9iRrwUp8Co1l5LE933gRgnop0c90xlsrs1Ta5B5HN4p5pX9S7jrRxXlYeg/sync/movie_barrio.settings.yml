@@ -34,11 +34,11 @@ features:
   favicon: 1
 logo:
   use_default: 0
-  path: 'public://MovieSpot_0.jpg'
+  path: sites/default/files/icons/MovieSpot_0.jpg
 favicon:
   use_default: 0
-  path: 'public://favicon_0.jpg'
-  mimetype: image/jpeg
+  path: sites/default/files/icons/favicon_0.jpg.
+  mimetype: application/octet-stream
 bootstrap_barrio_source: '0'
 bootstrap_barrio_region_clean_top_header: 0
 bootstrap_barrio_region_class_top_header: row
