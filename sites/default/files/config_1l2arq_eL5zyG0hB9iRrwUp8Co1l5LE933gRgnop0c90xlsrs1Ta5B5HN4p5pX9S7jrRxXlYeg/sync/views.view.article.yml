@@ -401,6 +401,7 @@ display:
         type: normal
         title: Articles
         menu_name: main
+        weight: -50
     cache_metadata:
       max-age: -1
       contexts:

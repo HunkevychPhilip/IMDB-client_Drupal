@@ -1,0 +1,24 @@
+uuid: 2b95915c-4f60-48d5-8dce-9ed187513d39
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.persons
+  module:
+    - views
+  theme:
+    - movie_barrio
+id: views_block__persons_block_persons
+theme: movie_barrio
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:persons-block_persons'
+settings:
+  id: 'views_block:persons-block_persons'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }
