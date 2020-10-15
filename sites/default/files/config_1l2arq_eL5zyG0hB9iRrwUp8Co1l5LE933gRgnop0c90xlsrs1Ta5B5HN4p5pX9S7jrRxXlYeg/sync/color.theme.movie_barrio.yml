@@ -1,0 +1,18 @@
+palette:
+  top: '#8c0e2f'
+  bottom: '#d7210e'
+  bg: '#ffffff'
+  sidebar: '#d2d2d2'
+  sidebarborders: '#d7210e'
+  footer: '#292929'
+  button: '#d7210e'
+  buttonhover: '#8c0e2f'
+  titleslogan: '#fffeff'
+  text: '#3b3b3b'
+  link: '#d7210e'
+logo: 'public://color/movie_barrio-d4e4c030/logo.svg'
+stylesheets:
+  - 'public://color/movie_barrio-d4e4c030/colors.css'
+files:
+  - 'public://color/movie_barrio-d4e4c030/logo.svg'
+  - 'public://color/movie_barrio-d4e4c030/colors.css'

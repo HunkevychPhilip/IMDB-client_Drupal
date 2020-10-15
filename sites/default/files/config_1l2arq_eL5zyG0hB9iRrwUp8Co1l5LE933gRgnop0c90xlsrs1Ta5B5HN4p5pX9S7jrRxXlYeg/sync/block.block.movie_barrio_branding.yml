@@ -1,0 +1,25 @@
+uuid: bf6ccd4b-da80-4c23-b90d-b6bbb36b1e02
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - movie_barrio
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: movie_barrio_branding
+theme: movie_barrio
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
