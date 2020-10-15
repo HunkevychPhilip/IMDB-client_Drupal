@@ -1,0 +1,22 @@
+uuid: 6f1f5dba-2a45-4cc0-9ccd-7a0219555388
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - movie_barrio
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: movie_barrio_powered
+theme: movie_barrio
+region: footer_fifth
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
