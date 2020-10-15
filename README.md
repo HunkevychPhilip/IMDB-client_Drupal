@@ -13,3 +13,10 @@
 * click on the `import` tab
 * choose the `initial-dump.sql` file from your cloned repository folder and click on the `go` button (wait until db creating is done)
 * now you can open Drupal site on your local web server (log: admin, pass: admin)
+
+# If you encounter theme-loading problem:
+* find the `log` button with ctrl-F
+* login as an admin (log: admin, pass: admin)
+* go to the `Appearance` tab
+* press the `Settings` button under the `Movie Barrio` theme
+* scroll down and hit the `Save configs` button
