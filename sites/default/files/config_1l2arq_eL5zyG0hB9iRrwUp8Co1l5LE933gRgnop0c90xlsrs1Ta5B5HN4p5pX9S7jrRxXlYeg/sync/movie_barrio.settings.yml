@@ -33,10 +33,10 @@ features:
   comment_user_verification: 1
   favicon: 1
 logo:
-  use_default: 0
+  use_default: 1
   path: 'public://MovieSpot_0.jpg'
 favicon:
-  use_default: 0
+  use_default: 1
   path: 'public://favicon_0.jpg'
   mimetype: image/jpeg
 bootstrap_barrio_source: '0'

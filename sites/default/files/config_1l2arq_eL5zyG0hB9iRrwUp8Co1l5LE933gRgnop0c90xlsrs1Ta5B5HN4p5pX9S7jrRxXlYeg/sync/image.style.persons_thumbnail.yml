@@ -1,0 +1,15 @@
+uuid: e94c09f5-03a3-472b-919b-73a6ad63146c
+langcode: en
+status: true
+dependencies: {  }
+name: persons_thumbnail
+label: Persons_thumbnail
+effects:
+  52b4e1a1-c841-4569-87ae-73bc20902f6a:
+    uuid: 52b4e1a1-c841-4569-87ae-73bc20902f6a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 443
+      anchor: center-center

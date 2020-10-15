@@ -10,9 +10,9 @@ palette:
   titleslogan: '#fffeff'
   text: '#3b3b3b'
   link: '#d7210e'
-logo: 'public://color/movie_barrio-d4e4c030/logo.svg'
+logo: 'public://color/movie_barrio-a43af45e/logo.svg'
 stylesheets:
-  - 'public://color/movie_barrio-d4e4c030/colors.css'
+  - 'public://color/movie_barrio-a43af45e/colors.css'
 files:
-  - 'public://color/movie_barrio-d4e4c030/logo.svg'
-  - 'public://color/movie_barrio-d4e4c030/colors.css'
+  - 'public://color/movie_barrio-a43af45e/logo.svg'
+  - 'public://color/movie_barrio-a43af45e/colors.css'
