@@ -1,0 +1,24 @@
+uuid: 186f9775-4086-4c1a-934c-15737d312246
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.films
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__films_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:films-block_1'
+settings:
+  id: 'views_block:films-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }
