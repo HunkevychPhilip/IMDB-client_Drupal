@@ -1,0 +1,33 @@
+uuid: a84589c8-3e39-45d8-a329-9345c2ffccef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_film_country
+    - node.type.film
+    - taxonomy.vocabulary.contries
+  content:
+    - 'taxonomy_term:contries:5cb903fc-ec5a-4491-b8ae-e9d7d0526e3a'
+id: node.film.field_film_country
+field_name: field_film_country
+entity_type: node
+bundle: film
+label: Country
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 5cb903fc-ec5a-4491-b8ae-e9d7d0526e3a
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      contries: contries
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

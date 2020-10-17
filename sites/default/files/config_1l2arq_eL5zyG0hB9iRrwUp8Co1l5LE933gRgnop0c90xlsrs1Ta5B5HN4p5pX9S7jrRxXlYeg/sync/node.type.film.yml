@@ -1,0 +1,18 @@
+uuid: cc8cdcc2-f5ef-4f5b-b87d-ce0bf54c8491
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Film
+type: film
+description: 'Content for the film'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

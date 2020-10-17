@@ -1,19 +1,19 @@
-uuid: ed3a11d4-935c-431b-a601-66f5a48bdabe
+uuid: 867c5ecf-fc20-4b5d-83db-6a30f2d65ecc
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.taxonomy_term.field_logo
-    - taxonomy.vocabulary.production
+    - field.storage.node.field_poster
+    - node.type.film
   module:
     - image
-id: taxonomy_term.production.field_logo
-field_name: field_logo
-entity_type: taxonomy_term
-bundle: production
-label: Logo
+id: node.film.field_poster
+field_name: field_poster
+entity_type: node
+bundle: film
+label: Poster
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -31,8 +31,8 @@ settings:
     uuid: ''
     alt: ''
     title: ''
-    width: 800
-    height: 421
+    width: null
+    height: null
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

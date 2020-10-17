@@ -1,21 +1,21 @@
-uuid: bb62bde7-2598-4bdb-adb6-8f47eb1ab4dc
+uuid: e0bce0b3-0db3-439d-88f6-f5873a17556f
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.articles_block
+    - views.view.persons
   module:
     - views
   theme:
     - bartik
-id: views_block__articles_block_block_1
+id: views_block__persons_block_persons_2
 theme: bartik
 region: sidebar_second
 weight: 0
 provider: null
-plugin: 'views_block:articles_block-block_1'
+plugin: 'views_block:persons-block_persons'
 settings:
-  id: 'views_block:articles_block-block_1'
+  id: 'views_block:persons-block_persons'
   label: ''
   provider: views
   label_display: visible

@@ -1,0 +1,23 @@
+uuid: 005b047a-0a45-42ef-8334-1c0b41cb2b20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rank_site
+    - node.type.film
+id: node.film.field_rank_site
+field_name: field_rank_site
+entity_type: node
+bundle: film
+label: 'Rank site'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 10
+  prefix: ''
+  suffix: ''
+field_type: float

@@ -1,0 +1,25 @@
+uuid: 7a21e1c2-fd11-48e8-9d6b-bf1780a41eae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bud
+    - node.type.film
+id: node.film.field_bud
+field_name: field_bud
+entity_type: node
+bundle: film
+label: Budget
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: !!float 120000
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: $
+  suffix: ''
+field_type: float

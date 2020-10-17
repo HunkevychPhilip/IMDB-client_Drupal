@@ -1,0 +1,44 @@
+uuid: d8946e9c-b1d1-4859-b6da-a1aecbc99e15
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.film.field_actors
+    - field.field.node.film.field_bud
+    - field.field.node.film.field_director
+    - field.field.node.film.field_film_country
+    - field.field.node.film.field_film_genre
+    - field.field.node.film.field_film_production
+    - field.field.node.film.field_poster
+    - field.field.node.film.field_rank_imdb
+    - field.field.node.film.field_rank_site
+    - field.field.node.film.field_runtime
+    - field.field.node.film.field_trailer
+    - field.field.node.film.field_year
+    - node.type.film
+  module:
+    - user
+id: node.film.teaser
+targetEntityType: node
+bundle: film
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_actors: true
+  field_bud: true
+  field_director: true
+  field_film_country: true
+  field_film_genre: true
+  field_film_production: true
+  field_poster: true
+  field_rank_imdb: true
+  field_rank_site: true
+  field_runtime: true
+  field_trailer: true
+  field_year: true

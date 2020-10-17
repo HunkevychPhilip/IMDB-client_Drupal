@@ -1,0 +1,23 @@
+uuid: b47bebc9-2480-478a-995b-1bf9bbd820d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_runtime
+    - node.type.film
+id: node.film.field_runtime
+field_name: field_runtime
+entity_type: node
+bundle: film
+label: Runtime
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 500
+  prefix: ''
+  suffix: ' minutes'
+field_type: integer

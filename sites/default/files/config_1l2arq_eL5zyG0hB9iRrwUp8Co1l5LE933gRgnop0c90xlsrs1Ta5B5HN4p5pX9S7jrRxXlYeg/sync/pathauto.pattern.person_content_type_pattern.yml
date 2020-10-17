@@ -7,16 +7,16 @@ dependencies:
 id: person_content_type_pattern
 label: 'Pattern for the person content type'
 type: 'canonical_entities:node'
-pattern: 'persons/[node:title]'
+pattern: '/persons/[node:title]'
 selection_criteria:
-  a74821b5-cddc-4183-8f71-e1fa0793d66b:
+  25a64434-bfbf-4c1c-89b1-7a670ad3dee9:
     id: node_type
     bundles:
       person: person
     negate: false
     context_mapping:
       node: node
-    uuid: a74821b5-cddc-4183-8f71-e1fa0793d66b
+    uuid: 25a64434-bfbf-4c1c-89b1-7a670ad3dee9
 selection_logic: and
 weight: -5
 relationships: {  }

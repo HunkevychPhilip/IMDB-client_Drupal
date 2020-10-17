@@ -1,0 +1,29 @@
+uuid: 4aba8ea0-826c-428c-a579-dd53ca1224a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_film_genre
+    - node.type.film
+    - taxonomy.vocabulary.tags
+id: node.film.field_film_genre
+field_name: field_film_genre
+entity_type: node
+bundle: film
+label: Genre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: contries
+field_type: entity_reference

@@ -1,21 +1,21 @@
-uuid: cc3333ea-b5c9-4871-a09f-72367c04fa6b
+uuid: d81e796b-9ec5-4507-8567-da5beee462ad
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.articles_block
+    - views.view.article
   module:
     - views
   theme:
     - movie_barrio
-id: movie_barrio_views_block__articles_block_block_1
+id: views_block__article_block_1
 theme: movie_barrio
 region: sidebar_second
 weight: 0
 provider: null
-plugin: 'views_block:articles_block-block_1'
+plugin: 'views_block:article-block_1'
 settings:
-  id: 'views_block:articles_block-block_1'
+  id: 'views_block:article-block_1'
   label: ''
   provider: views
   label_display: visible
