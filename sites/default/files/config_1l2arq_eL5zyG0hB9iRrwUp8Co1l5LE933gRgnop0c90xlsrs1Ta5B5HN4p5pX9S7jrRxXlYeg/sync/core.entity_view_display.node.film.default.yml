@@ -3,9 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.film_comments.default
     - field.field.node.film.field_actors
     - field.field.node.film.field_bud
     - field.field.node.film.field_director
+    - field.field.node.film.field_film_comments
     - field.field.node.film.field_film_country
     - field.field.node.film.field_film_genre
     - field.field.node.film.field_film_production
@@ -17,6 +19,7 @@ dependencies:
     - field.field.node.film.field_year
     - node.type.film
   module:
+    - comment
     - image
     - link
     - user
@@ -51,6 +54,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_film_comments:
+    weight: 13
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
     region: content
   field_film_country:
     weight: 4
