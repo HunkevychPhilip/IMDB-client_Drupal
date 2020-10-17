@@ -12,6 +12,8 @@
 * open `phpmyadmin` with Apache and MySQL running
 * click on the `import` tab
 * choose the `initial-dump.sql` file from your cloned repository folder and click on the `go` button (wait until db creating is done)
+* again `cd` into cloned repository folder
+* execute `vendor/bin/drush cim`, then type `yes` (wait until configs importing is done)
 * now you can open Drupal site on your local web server (log: admin, pass: admin)
 
 # If you encounter theme-loading problem:
