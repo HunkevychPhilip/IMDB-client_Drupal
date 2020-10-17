@@ -1,0 +1,22 @@
+uuid: aac34539-4eff-4515-86f1-46d26b046a36
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pattern_for_the_film_content_type
+label: 'Pattern for the article content type'
+type: 'canonical_entities:node'
+pattern: '/fims/[node:title]'
+selection_criteria:
+  4379146f-d9c1-405c-9a85-418115b0926d:
+    id: node_type
+    bundles:
+      film: film
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4379146f-d9c1-405c-9a85-418115b0926d
+selection_logic: and
+weight: 0
+relationships: {  }

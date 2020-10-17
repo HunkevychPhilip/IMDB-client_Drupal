@@ -1,0 +1,18 @@
+uuid: c6d33c8f-e355-4f1b-b0c3-8b5e9798515d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_rank_imdb
+field_name: field_rank_imdb
+entity_type: node
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

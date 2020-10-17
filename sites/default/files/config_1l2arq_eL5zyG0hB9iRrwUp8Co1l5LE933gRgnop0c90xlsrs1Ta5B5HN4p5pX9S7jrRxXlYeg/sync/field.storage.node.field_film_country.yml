@@ -1,0 +1,20 @@
+uuid: c41759b0-0efa-4e7c-8a74-4ebf4f90c4a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_film_country
+field_name: field_film_country
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
