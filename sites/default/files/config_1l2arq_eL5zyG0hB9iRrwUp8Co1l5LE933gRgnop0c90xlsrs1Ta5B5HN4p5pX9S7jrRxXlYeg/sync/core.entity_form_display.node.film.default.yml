@@ -100,13 +100,6 @@ content:
     third_party_settings: {  }
     type: number
     region: content
-  field_rank_site:
-    weight: 17
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
-    region: content
   field_runtime:
     weight: 14
     settings:
@@ -174,4 +167,5 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_rank_site: true
