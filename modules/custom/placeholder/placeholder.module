@@ -1,0 +1,35 @@
+<?php
+
+/**
+ *   Implements hook_ENTITY_TYPEP_presave
+ *   @param \Drupal\Core\Entity\EntityInterface $entity
+ */
+function placeholder_comment_presave (\Drupal\Core\Entity\EntityInterface $entity)
+{
+  if ($entity->bundle() == 'film_comments') {
+    $ranks = [];
+    $ranks[] = (int) $entity->get('field_rank')->value;
+
+    $film_id = $entity->getCommentedEntityId();
+    $query = Drupal::entityQuery('comment')
+      ->condition('entity_id', $film_id)
+      ->condition('comment_type', 'film_comments');
+
+    if ($entity->id()) {
+      $query->condition('cid', $entity->id(), '<>');
+    }
+
+    $ids = $query->execute();
+    $comment_storage = Drupal::entityTypeManager()->getStorage('comment');
+    $comments = $comment_storage->loadMultiple($ids);
+
+    foreach ($comments as $comment) {
+      $ranks[] = (int) $comment->get('field_rank')->value;
+    }
+
+    $avg = array_sum($ranks) / count($ranks);
+    $film = $entity->getCommentedEntity();
+    $film->set('field_rank_site', $avg);
+    $film->save();
+  }
+}
