@@ -15,8 +15,6 @@ dependencies:
     - taxonomy.vocabulary.contries
     - taxonomy.vocabulary.production
     - taxonomy.vocabulary.tags
-  content:
-    - 'taxonomy_term:tags:db2df128-6c7f-4700-aa20-8dab57bc57af'
   module:
     - image
     - node
@@ -386,8 +384,7 @@ display:
           group_type: group
           admin_label: ''
           operator: or
-          value:
-            11: 11
+          value: {  }
           group: 1
           exposed: true
           expose:
@@ -404,8 +401,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              administrator: administrator
               anonymous: '0'
+              administrator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -435,7 +432,7 @@ display:
           type: select
           limit: true
           vid: tags
-          hierarchy: true
+          hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
         field_film_production_target_id:
