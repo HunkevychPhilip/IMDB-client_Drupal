@@ -1,0 +1,66 @@
+uuid: ff31ee92-7e3d-4c0d-914b-18d399c38986
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+    - views.view.article
+    - views.view.films
+    - views.view.persons
+  module:
+    - panels
+    - views
+id: homepage-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    f115536e-7fc1-494a-ae87-2fd8dcd043ad:
+      id: 'views_block:films-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: '10'
+      region: first
+      weight: -1
+      uuid: f115536e-7fc1-494a-ae87-2fd8dcd043ad
+      context_mapping: {  }
+    ee84ddfb-a737-4dff-a593-674006b7ab7c:
+      id: 'views_block:persons-block_persons'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: first
+      weight: 0
+      uuid: ee84ddfb-a737-4dff-a593-674006b7ab7c
+      context_mapping: {  }
+    e5b1c41a-ba9f-47fc-85a0-46e70dc32d62:
+      id: 'views_block:article-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: first
+      weight: 1
+      uuid: e5b1c41a-ba9f-47fc-85a0-46e70dc32d62
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 4be64459-1082-4b1f-88e7-ab552d530324
+  label: null
+  weight: 0
+  layout: layout_twocol
+  layout_settings:
+    label: ''
+  page_title: ''
+  storage_type: page_manager
+  storage_id: homepage-panels_variant-0
+  builder: standard
+page: homepage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

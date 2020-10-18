@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.article
   module:
+    - system
     - views
   theme:
     - bartik
@@ -21,4 +22,8 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/articles\r\n/home"
+    negate: true
