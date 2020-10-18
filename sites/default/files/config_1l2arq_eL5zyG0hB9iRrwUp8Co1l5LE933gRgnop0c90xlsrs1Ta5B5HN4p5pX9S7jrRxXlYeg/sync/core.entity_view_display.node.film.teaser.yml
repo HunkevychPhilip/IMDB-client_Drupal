@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.film.field_actors
     - field.field.node.film.field_bud
     - field.field.node.film.field_director
+    - field.field.node.film.field_film_comments
     - field.field.node.film.field_film_country
     - field.field.node.film.field_film_genre
     - field.field.node.film.field_film_production
@@ -33,6 +34,7 @@ hidden:
   field_actors: true
   field_bud: true
   field_director: true
+  field_film_comments: true
   field_film_country: true
   field_film_genre: true
   field_film_production: true
