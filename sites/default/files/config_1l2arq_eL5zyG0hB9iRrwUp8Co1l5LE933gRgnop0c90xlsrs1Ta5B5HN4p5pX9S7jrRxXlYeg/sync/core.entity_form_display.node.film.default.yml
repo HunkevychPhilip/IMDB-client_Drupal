@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.film.field_rank_imdb
     - field.field.node.film.field_rank_site
     - field.field.node.film.field_runtime
+    - field.field.node.film.field_trailer
     - field.field.node.film.field_year
     - image.style.thumbnail
     - node.type.film
@@ -112,6 +113,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_trailer:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_year:
     weight: 13

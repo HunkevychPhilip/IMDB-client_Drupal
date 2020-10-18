@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.film.field_rank_imdb
     - field.field.node.film.field_rank_site
     - field.field.node.film.field_runtime
+    - field.field.node.film.field_trailer
     - field.field.node.film.field_year
     - node.type.film
   module:
@@ -125,6 +126,15 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
+    region: content
+  field_trailer:
+    type: entity_reference_entity_view
+    weight: 12
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
     region: content
   field_year:
     weight: 6
