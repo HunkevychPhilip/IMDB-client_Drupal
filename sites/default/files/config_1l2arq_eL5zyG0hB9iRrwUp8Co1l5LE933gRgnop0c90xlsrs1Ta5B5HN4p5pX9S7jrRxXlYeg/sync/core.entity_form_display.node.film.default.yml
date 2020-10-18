@@ -14,14 +14,12 @@ dependencies:
     - field.field.node.film.field_rank_imdb
     - field.field.node.film.field_rank_site
     - field.field.node.film.field_runtime
-    - field.field.node.film.field_trailer
     - field.field.node.film.field_year
     - image.style.thumbnail
     - node.type.film
   module:
     - comment
     - image
-    - link
     - path
 id: node.film.default
 targetEntityType: node
@@ -114,14 +112,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
-    region: content
-  field_trailer:
-    weight: 19
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
     region: content
   field_year:
     weight: 13

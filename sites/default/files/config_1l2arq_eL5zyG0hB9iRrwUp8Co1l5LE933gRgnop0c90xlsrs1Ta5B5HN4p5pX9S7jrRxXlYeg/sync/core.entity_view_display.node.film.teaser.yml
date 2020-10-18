@@ -15,7 +15,6 @@ dependencies:
     - field.field.node.film.field_rank_imdb
     - field.field.node.film.field_rank_site
     - field.field.node.film.field_runtime
-    - field.field.node.film.field_trailer
     - field.field.node.film.field_year
     - node.type.film
   module:
@@ -42,5 +41,4 @@ hidden:
   field_rank_imdb: true
   field_rank_site: true
   field_runtime: true
-  field_trailer: true
   field_year: true

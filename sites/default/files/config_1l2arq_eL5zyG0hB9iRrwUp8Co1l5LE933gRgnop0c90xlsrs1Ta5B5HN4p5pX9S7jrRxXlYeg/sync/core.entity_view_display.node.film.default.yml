@@ -15,13 +15,11 @@ dependencies:
     - field.field.node.film.field_rank_imdb
     - field.field.node.film.field_rank_site
     - field.field.node.film.field_runtime
-    - field.field.node.film.field_trailer
     - field.field.node.film.field_year
     - node.type.film
   module:
     - comment
     - image
-    - link
     - user
 id: node.film.default
 targetEntityType: node
@@ -127,18 +125,6 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
-    region: content
-  field_trailer:
-    weight: 12
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
     region: content
   field_year:
     weight: 6
