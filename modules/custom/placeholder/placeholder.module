@@ -20,7 +20,7 @@ function placeholder_comment_presave (\Drupal\Core\Entity\EntityInterface $entit
     }
 
     $ids = $query->execute();
-    $comment_storage = Drupal::entityTypeManager()->getStorage('comment');
+    $comment_storage = \Drupal::entityTypeManager()->getStorage('comment');
     $comments = $comment_storage->loadMultiple($ids);
 
     foreach ($comments as $comment) {
