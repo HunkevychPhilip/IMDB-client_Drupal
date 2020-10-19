@@ -192,6 +192,8 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      link_url: ''
+      link_display: page_1
     cache_metadata:
       max-age: -1
       contexts:
@@ -215,12 +217,15 @@ display:
         row: false
         pager: false
         fields: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
       row:
         type: fields
       pager:
         type: some
         options:
-          items_per_page: 3
+          items_per_page: 8
           offset: 0
       fields:
         title:
@@ -286,6 +291,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+      use_more: true
+      use_more_always: true
+      use_more_text: 'Show more ...'
     cache_metadata:
       max-age: -1
       contexts:
@@ -306,6 +314,7 @@ display:
         type: normal
         title: Films
         menu_name: main
+        weight: -47
       filters:
         title:
           id: title

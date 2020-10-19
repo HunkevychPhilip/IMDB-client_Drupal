@@ -416,6 +416,11 @@ display:
         operator: AND
         groups:
           1: AND
+      use_more: true
+      use_more_always: true
+      use_more_text: 'Show more ...'
+      link_url: ''
+      link_display: page_persons_view
     cache_metadata:
       max-age: -1
       contexts:
@@ -563,7 +568,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: standard
-      block_description: persons_homepage
+      block_description: Persons
     cache_metadata:
       max-age: -1
       contexts:
@@ -586,9 +591,16 @@ display:
         description: ''
         expanded: false
         parent: ''
-        weight: -49
+        weight: -48
         context: '0'
         menu_name: main
+      use_more: false
+      defaults:
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+      use_more_always: true
+      use_more_text: 'Show more ...'
     cache_metadata:
       max-age: -1
       contexts:

@@ -55,7 +55,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 3
+          items_per_page: 8
           offset: 0
       style:
         type: grid
@@ -306,6 +306,8 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      link_url: ''
+      link_display: page_1
     cache_metadata:
       max-age: -1
       contexts:
@@ -330,6 +332,9 @@ display:
         fields: false
         style: false
         row: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
       fields:
         title:
           id: title
@@ -394,6 +399,9 @@ display:
           inline: {  }
           separator: ''
           hide_empty: true
+      use_more: true
+      use_more_always: true
+      use_more_text: 'Show more ...'
     cache_metadata:
       max-age: -1
       contexts:
@@ -414,7 +422,7 @@ display:
         type: normal
         title: Articles
         menu_name: main
-        weight: -50
+        weight: -49
       fields:
         field_article_image:
           id: field_article_image
