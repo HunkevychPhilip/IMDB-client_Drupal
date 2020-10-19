@@ -1,0 +1,7 @@
+movie_custom.imdb_api_settings:
+  path: 'admin/config/services/imdb-api'
+  defaults:
+    _form: 'Drupal\movie_custom\Form\ImdbApiSettings'
+    _title: 'API settings'
+  requirements:
+    _permission: 'administer site configuration'

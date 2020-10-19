@@ -21,7 +21,6 @@ dependencies:
   module:
     - comment
     - image
-    - link
     - path
 id: node.film.default
 targetEntityType: node
@@ -116,12 +115,14 @@ content:
     type: number
     region: content
   field_trailer:
-    weight: 19
+    weight: 27
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: link_default
+    type: entity_reference_autocomplete
     region: content
   field_year:
     weight: 13

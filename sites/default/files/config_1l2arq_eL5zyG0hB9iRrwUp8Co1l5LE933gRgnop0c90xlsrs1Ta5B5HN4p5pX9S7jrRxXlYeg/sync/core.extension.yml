@@ -26,6 +26,7 @@ module:
   image_captcha: 0
   layout_discovery: 0
   link: 0
+  media: 0
   menu_link_content: 0
   menu_ui: 0
   node: 0
@@ -50,6 +51,8 @@ module:
   tour: 0
   update: 0
   user: 0
+  video_embed_field: 0
+  video_embed_media: 0
   views_ui: 0
   pathauto: 1
   views: 10

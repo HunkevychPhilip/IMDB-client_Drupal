@@ -1,0 +1,15 @@
+uuid: b2d912dc-2b85-4283-a17f-3a902b4a1944
+langcode: en
+status: true
+dependencies: {  }
+name: film_poster
+label: 'Film poster'
+effects:
+  3ad936f9-785b-4939-8d2b-e24ec0e429d1:
+    uuid: 3ad936f9-785b-4939-8d2b-e24ec0e429d1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 444
+      anchor: center-center

@@ -1,18 +1,19 @@
-uuid: e0c79ded-925c-4b30-94a5-22581b6619c1
+uuid: 7cdae03e-ca78-4293-adb7-f926762759e8
 langcode: en
 status: true
 dependencies:
   module:
-    - link
+    - media
     - node
 id: node.field_trailer
 field_name: field_trailer
 entity_type: node
-type: link
-settings: {  }
-module: link
+type: entity_reference
+settings:
+  target_type: media
+module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
