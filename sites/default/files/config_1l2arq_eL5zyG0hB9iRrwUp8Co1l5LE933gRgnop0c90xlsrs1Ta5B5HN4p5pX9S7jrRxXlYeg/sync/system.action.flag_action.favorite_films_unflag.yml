@@ -1,0 +1,15 @@
+uuid: 6bd6fc65-b2c4-48bb-85e4-f6a050efd3a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.favorite_films
+  module:
+    - flag
+id: flag_action.favorite_films_unflag
+label: 'Unflag this item'
+type: node
+plugin: 'flag_action:favorite_films_unflag'
+configuration:
+  flag_id: favorite_films
+  flag_action: unflag
