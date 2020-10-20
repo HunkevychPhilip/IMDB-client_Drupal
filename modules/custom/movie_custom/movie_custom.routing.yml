@@ -5,3 +5,11 @@ movie_custom.imdb_api_settings:
     _title: 'API settings'
   requirements:
     _permission: 'administer site configuration'
+
+movie_custom.service_form:
+  path: '/service-form'
+  defaults:
+    _form: 'Drupal\movie_custom\Form\ServiceForm'
+    _title: 'Film Service Form'
+  requirements:
+    _permission: 'access content'
