@@ -1,0 +1,3 @@
+moderate_permission:
+ title: 'Access to quick create form'
+ description: 'Indicates whether the form can be accessed'

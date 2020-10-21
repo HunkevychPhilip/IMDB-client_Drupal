@@ -7,9 +7,11 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\movie_custom\Client\ImdbApiClient;
 use Drupal\movie_custom\Service\FilmService;
+use Drupal\Core\Messenger\MessengerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-class ServiceForm extends FormBase {
+class ServiceForm extends FormBase
+{
 
     /**
      * @var Drupal\movie_custom\Client\ImdbApiClient
@@ -21,27 +23,29 @@ class ServiceForm extends FormBase {
      */
     protected $filmService;
 
-    function __construct(ImdbApiClient $client, FilmService $filmService)
+    function __construct(ImdbApiClient $client, FilmService $filmService, MessengerInterface $messenger)
     {
         $this->client = $client;
         $this->filmService = $filmService;
-
+        $this->messenger = $messenger;
     }
 
     /**
      * {@inheritdoc}
      */
-  public function getFormId()
+    public function getFormId()
     {
-        return 'service_form';
+        return 'service-form';
     }
 
-public static function create(ContainerInterface $container) {
-    return new static(
-        $container->get('movie_custom.client'),
-        $container->get('movie_custom.film_service')
-    );
-}
+    public static function create(ContainerInterface $container)
+    {
+        return new static(
+            $container->get('movie_custom.client'),
+            $container->get('movie_custom.film_service'),
+            $container->get('messenger')
+        );
+    }
 
     /**
      * {@inheritdoc}
@@ -68,15 +72,14 @@ public static function create(ContainerInterface $container) {
      */
     public function submitForm(array &$form, FormStateInterface $form_state)
     {
-       $name = $form_state ->getValue('name');
-       $data = $this->client->getFilmInfo($name);
+        $name = $form_state->getValue('name');
 
-       if (isset($data['Title'])) {
-        $this->messenger->addError($data['Title']);
-       }
+        $data = $this->client->getFilmInfo($name);
 
-    $this->filmService->createFilm($data);
-    
+        $entities = $this->filmService->createFilm($data);
 
+        foreach ($entities as $entity) {
+            $this->messenger->addMessage(t('<b>@title</b> @type was created', ['@type' => $entity->bundle(), '@title' => $entity->label()]));
+        }
     }
 }
