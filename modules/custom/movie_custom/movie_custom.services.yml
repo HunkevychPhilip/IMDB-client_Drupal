@@ -1,4 +1,4 @@
 services:
   movie_custom.client:
-  class: '\Drupal\movie_custom\Client\ImdbApiClient'
-  arguments: ['@http_client', '@config.factory']
+    class: '\Drupal\movie_custom\Client\ImdbApiClient'
+    arguments: ['@http_client', '@config.factory']
