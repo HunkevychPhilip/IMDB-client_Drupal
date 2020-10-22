@@ -4,3 +4,9 @@ movie_custom.imdb_api_settings:
    parent: system.admin_config_services
    route_name: movie_custom.imdb_api_settings
    weight: 2
+movie_custom.quick_create:
+   title: 'Quick create'
+   description: 'Quick create content with movie ID'
+   parent: system.admin_content
+   route_name: movie_custom.service_form
+   weight: 3
