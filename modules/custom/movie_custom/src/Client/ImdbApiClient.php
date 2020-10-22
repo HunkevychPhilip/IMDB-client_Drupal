@@ -31,12 +31,11 @@ class ImdbApiClient implements ImdbApiClientInterface {
 
            return json_decode($response->getBody(), TRUE);
        } catch (RequestException $e){
-           
+
         return ['errorCode' => $e->getCode(), 'message' => $e->getMessage()];
        }
    }
    public function getFilmInfo(string $id){
-
     return $this->apiQuery(['i' => $id]);
    }
 

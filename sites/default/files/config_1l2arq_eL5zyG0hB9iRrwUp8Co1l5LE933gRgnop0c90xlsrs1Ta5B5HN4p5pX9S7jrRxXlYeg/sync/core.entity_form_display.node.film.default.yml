@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.film.field_film_country
     - field.field.node.film.field_film_genre
     - field.field.node.film.field_film_production
+    - field.field.node.film.field_imdbid
     - field.field.node.film.field_poster
     - field.field.node.film.field_rank_imdb
     - field.field.node.film.field_rank_site
@@ -34,30 +35,34 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_actors:
-    weight: 8
+    weight: 26
     settings:
+      match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: entity_reference_autocomplete
     region: content
   field_bud:
-    weight: 15
+    weight: 14
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_director:
-    weight: 7
+    weight: 27
     settings:
+      match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: entity_reference_autocomplete
     region: content
   field_film_comments:
-    weight: 26
+    weight: 17
     settings: {  }
     third_party_settings: {  }
     type: comment_default
@@ -93,7 +98,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_poster:
-    weight: 18
+    weight: 16
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -101,21 +106,21 @@ content:
     type: image_image
     region: content
   field_rank_imdb:
-    weight: 16
+    weight: 15
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_runtime:
-    weight: 14
+    weight: 13
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_trailer:
-    weight: 27
+    weight: 18
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -125,7 +130,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_year:
-    weight: 13
+    weight: 12
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -177,4 +182,5 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
+  field_imdbid: true
   field_rank_site: true
