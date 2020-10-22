@@ -1,0 +1,19 @@
+uuid: da5a8fee-c8b2-47ea-86a7-670ae72728b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imdbid
+    - node.type.film
+id: node.film.field_imdbid
+field_name: field_imdbid
+entity_type: node
+bundle: film
+label: imdbID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

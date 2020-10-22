@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.film.field_film_country
     - field.field.node.film.field_film_genre
     - field.field.node.film.field_film_production
+    - field.field.node.film.field_imdbid
     - field.field.node.film.field_poster
     - field.field.node.film.field_rank_imdb
     - field.field.node.film.field_rank_site
@@ -38,6 +39,7 @@ hidden:
   field_film_country: true
   field_film_genre: true
   field_film_production: true
+  field_imdbid: true
   field_poster: true
   field_rank_imdb: true
   field_rank_site: true
