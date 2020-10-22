@@ -27,7 +27,8 @@
         "drupal/pathauto": "^1.8",
         "drupal/registration_link": "^2.3",
         "drupal/video_embed_field": "^2.4",
-        "drush/drush": "^10.3"
+        "drush/drush": "^10.3",
+      "ext-json": "*"
     },
     "conflict": {
         "drupal/drupal": "*"

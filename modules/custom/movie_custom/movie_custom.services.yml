@@ -4,4 +4,4 @@ services:
   arguments: ['@http_client', '@config.factory']
  movie_custom.film_service:
   class: '\Drupal\movie_custom\Service\FilmService'
-  arguments: ['@entity_type.manager']
+  arguments: ['@entity_type.manager', '@messenger']
