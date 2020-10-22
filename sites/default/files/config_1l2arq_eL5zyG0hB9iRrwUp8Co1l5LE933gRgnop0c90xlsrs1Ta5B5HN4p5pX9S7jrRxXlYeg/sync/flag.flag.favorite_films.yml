@@ -1,0 +1,30 @@
+uuid: 807447f3-f0b5-497a-a824-0768e7587887
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: favorite_films
+label: 'Favorite films'
+bundles:
+  - film
+entity_type: node
+global: false
+weight: 0
+flag_short: 'Add to favorites'
+flag_long: ''
+flag_message: Done
+unflag_short: 'Unflag this item'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

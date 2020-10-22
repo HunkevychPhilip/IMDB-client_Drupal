@@ -5,3 +5,4 @@ services:
  movie_custom.film_service:
   class: '\Drupal\movie_custom\Service\FilmService'
   arguments: ['@entity_type.manager', '@messenger']
+
