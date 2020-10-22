@@ -1,4 +1,4 @@
-uuid: aeea9dc4-e4fa-4e96-9f65-22fc11daaa1b
+uuid: fddfffbb-4b18-4a12-86bc-81d8e5d5aaf7
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,9 @@ dependencies:
 id: node.field_actors
 field_name: field_actors
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+  target_type: node
 module: core
 locked: false
 cardinality: -1

@@ -1,21 +1,28 @@
-uuid: 1b672f69-a5a6-48fd-9273-17cdde63a25d
+uuid: 3cd21850-2d12-4db0-896d-a73dd93518fa
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_director
     - node.type.film
+    - node.type.person
 id: node.film.field_director
 field_name: field_director
 entity_type: node
 bundle: film
 label: Director
 description: ''
-required: true
+required: false
 translatable: false
-default_value:
-  -
-    value: 'Stephan Naily'
+default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

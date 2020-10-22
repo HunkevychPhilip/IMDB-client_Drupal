@@ -1,21 +1,28 @@
-uuid: 3228f7fa-5316-4741-9151-2b38094452a7
+uuid: 7c32a321-fc00-4ead-a5c2-f77d78fce65e
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_actors
     - node.type.film
+    - node.type.person
 id: node.film.field_actors
 field_name: field_actors
 entity_type: node
 bundle: film
 label: Actors
 description: ''
-required: true
+required: false
 translatable: false
-default_value:
-  -
-    value: 'James Young'
+default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
