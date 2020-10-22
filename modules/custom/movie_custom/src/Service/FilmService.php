@@ -47,7 +47,7 @@ class FilmService implements FilmServiceInterface
     $referenceCountry = $this->referenceEntitiesMultiple($countries, 'contries');
     $referenceGenre = $this->referenceEntitiesMultiple($genres, 'tags');
     $referenceProduction = $this->referenceEntitiesMultiple($productions, 'production');
-//    $referenceFile= $this->referenceFile($data['Poster']);
+    $referenceFile= $this->referenceFile($data['Poster']);
 
     $film = $this->checkFilm($imdbID);
 
@@ -55,11 +55,9 @@ class FilmService implements FilmServiceInterface
       $values = [
         'title' => $data['Title'],
         'type' => 'film',
-//        'field_poster' => $referenceFile,
-        'field_actors' => $actors,
-        'field_director' => $director,
-//        'field_actors' => $referenceActors,
-//        'field_director' => $referenceDirector,
+        'field_poster' => $referenceFile,
+        'field_actors' => $referenceActors,
+        'field_director' => $referenceDirector,
         'field_film_country' => $referenceCountry,
         'field_film_genre' => $referenceGenre,
         'field_film_production' => $referenceProduction,
@@ -137,13 +135,13 @@ class FilmService implements FilmServiceInterface
     return $query->execute();
   }
 
-//  protected function referenceFile ($url)
-//  {
-//   $url = str_replace('._V1_SX300', '', $url);
-//   $data = file_get_contents($url);
-//   $fileName = pathinfo($url, PATHINFO_BASENAME);
-//   $file = file_save_data($data, 'public://posters' . date('Y-m' ) . '/' . $fileName);
-//
-//   return $file->id();
-//  }
+  protected function referenceFile ($url)
+  {
+    $url = str_replace('._V1_SX300', '', $url);
+    $data = file_get_contents($url);
+    $fileName = pathinfo($url, PATHINFO_BASENAME);
+    $file = file_save_data($data, 'public://posters/' . $fileName, FileSystemInterface::EXISTS_RENAME);
+
+    return $file->id();
+  }
 }
