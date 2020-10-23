@@ -1,0 +1,12 @@
+uuid: 79c10b13-cc4a-484c-ab1c-216bbcbe5a69
+langcode: en
+status: true
+dependencies: {  }
+id: moderator
+label: Moderator
+weight: 4
+is_admin: null
+permissions:
+  - 'administer comment types'
+  - 'administer comments'
+  - moderate_permission

@@ -147,6 +147,11 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
+  flag_favorite_films:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 0
     region: content
