@@ -1,0 +1,29 @@
+uuid: 8216806b-3aa5-42a4-966a-ffc29eeba7c8
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 3
+is_admin: null
+permissions:
+  - 'administer views'
+  - 'create article content'
+  - 'create film content'
+  - 'create person content'
+  - 'delete any article content'
+  - 'delete any film content'
+  - 'delete any person content'
+  - 'delete article revisions'
+  - 'delete film revisions'
+  - 'delete own article content'
+  - 'delete own film content'
+  - 'delete own person content'
+  - 'delete person revisions'
+  - 'edit any article content'
+  - 'edit any film content'
+  - 'edit any person content'
+  - 'edit own article content'
+  - 'edit own film content'
+  - 'edit own person content'
+  - moderate_permission

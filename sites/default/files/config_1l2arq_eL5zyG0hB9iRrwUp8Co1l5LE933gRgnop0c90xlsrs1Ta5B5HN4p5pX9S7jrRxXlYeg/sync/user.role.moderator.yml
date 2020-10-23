@@ -1,0 +1,14 @@
+uuid: 341c995d-d42d-41a7-bccc-2f354031a437
+langcode: en
+status: true
+dependencies: {  }
+id: moderator
+label: Moderator
+weight: 4
+is_admin: null
+permissions:
+  - 'administer comment fields'
+  - 'administer comment form display'
+  - 'administer comment types'
+  - 'administer comments'
+  - moderate_permission
